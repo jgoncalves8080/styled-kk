@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react";
+import React, { forwardRef, useRef  } from "react";
 import { ButtonProps, WrapperProps } from "./types";
 
 import * as S from "./styles";
@@ -27,7 +27,6 @@ const Button = forwardRef<WrapperProps, ButtonProps>(
         fullWidth={fullWidth}
         hasIcon={!!icon}
         shape={shape}
-        ref={ref}
         disabled={disabled || loading}
         outlined={outlined}
         variant={variant}

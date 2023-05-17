@@ -1,10 +1,6 @@
 import { AnchorHTMLAttributes, ButtonHTMLAttributes } from 'react'
 
-export type ButtonTypes =
-  | AnchorHTMLAttributes<HTMLAnchorElement>
-  | ButtonHTMLAttributes<HTMLButtonElement>
-
-export type ButtonProps = {
+export interface ButtonProps extends React.ComponentPropsWithoutRef<"button"> {
   size?: 'big' | 'small' | 'mini'
   variant?: "primary" | "secondary" | "duo" | "marketplace" | "default" | "error"
   shape?: "pill" | "tile"
@@ -15,7 +11,7 @@ export type ButtonProps = {
   disabled?: boolean
   circle?: boolean
   icon?: JSX.Element
-} & ButtonTypes
+}
 
 export type IconProps = Pick<ButtonProps, 'iconPosition'>
 

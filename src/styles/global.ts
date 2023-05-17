@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     min-height: 100%;
   }
-
+  
   body {
     position: absolute;
     top: 0;
@@ -35,11 +35,6 @@ export const GlobalStyle = createGlobalStyle`
   
   button:not(:disabled) {
     cursor: pointer;
-  }
-
-  a {
-    color: inherit;
-    text-decoration: none;
   }
 
   html {
